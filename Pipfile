@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sqlparse = "*"
+cipher = { git = "ssh://git@github.com/amano41/cipher" }
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+py2app = { version = "*", sys_platform = "== 'darwin'" }
+
+[requires]
+python_version = "3"
